@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TwZ-vq-rOz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TwZ-vq-rOz" userLabel="Record Button">
                                 <rect key="frame" x="163" y="328.5" width="49" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.81376936263642108" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Record"/>
@@ -26,25 +26,27 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MHh-9w-z3g"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swp-R5-yav">
-                                <rect key="frame" x="126" y="494" width="113" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Record" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UA2-hH-IOj">
+                                <rect key="frame" x="133" y="393" width="109.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="swp-R5-yav" userLabel="Stop Recording Button">
+                                <rect key="frame" x="134.5" y="468" width="106" height="30"/>
                                 <state key="normal" title="Stop Recording"/>
                                 <connections>
                                     <action selector="stopRecordingAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVe-tN-hA2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap To Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UA2-hH-IOj">
-                                <rect key="frame" x="126" y="393" width="113" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="UA2-hH-IOj" firstAttribute="centerX" secondItem="TwZ-vq-rOz" secondAttribute="centerX" id="1PF-N9-e5Z"/>
                             <constraint firstItem="TwZ-vq-rOz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9RA-ee-pnF"/>
+                            <constraint firstItem="swp-R5-yav" firstAttribute="centerX" secondItem="UA2-hH-IOj" secondAttribute="centerX" id="HNF-pk-yUm"/>
+                            <constraint firstItem="swp-R5-yav" firstAttribute="top" secondItem="UA2-hH-IOj" secondAttribute="bottom" constant="54" id="XPD-n0-F74"/>
+                            <constraint firstItem="UA2-hH-IOj" firstAttribute="top" secondItem="TwZ-vq-rOz" secondAttribute="bottom" constant="34.5" id="cn7-mT-k3k"/>
                             <constraint firstItem="TwZ-vq-rOz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="d9K-fH-ZN1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
