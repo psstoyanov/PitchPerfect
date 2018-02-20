@@ -19,15 +19,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TwZ-vq-rOz">
-                                <rect key="frame" x="163" y="318" width="49" height="30"/>
+                                <rect key="frame" x="163" y="328.5" width="49" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.81376936263642108" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Record"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TwZ-vq-rOz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dkQ-f1-gJw"/>
-                            <constraint firstItem="TwZ-vq-rOz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rjA-aD-2ox"/>
+                            <constraint firstItem="TwZ-vq-rOz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9RA-ee-pnF"/>
+                            <constraint firstItem="TwZ-vq-rOz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="d9K-fH-ZN1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
