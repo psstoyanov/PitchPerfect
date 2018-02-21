@@ -35,7 +35,6 @@
                                 <state key="normal" image="StopRecordButton"/>
                                 <connections>
                                     <action selector="stopRecordingAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVe-tN-hA2"/>
-                                    <segue destination="o7B-hS-xLP" kind="show" id="sB3-Lt-IwZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Record" textAlignment="natural" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UA2-hH-IOj">
@@ -61,6 +60,7 @@
                         <outlet property="recordButton" destination="TwZ-vq-rOz" id="hBD-zp-qJ5"/>
                         <outlet property="recordingLabel" destination="UA2-hH-IOj" id="cbL-PD-fmy"/>
                         <outlet property="stopRecordingButton" destination="swp-R5-yav" id="UgL-TK-Iyd"/>
+                        <segue destination="o7B-hS-xLP" kind="show" identifier="stopRecording" id="ctc-6j-5B9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
