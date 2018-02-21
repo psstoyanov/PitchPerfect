@@ -33,7 +33,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="swp-R5-yav" userLabel="Stop Recording Button">
-                                <rect key="frame" x="110" y="392" width="155" height="155"/>
+                                <rect key="frame" x="155.5" y="392" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="wPr-eh-txY"/>
+                                    <constraint firstAttribute="width" constant="64" id="yz7-Hg-AKI"/>
+                                </constraints>
                                 <state key="normal" image="StopRecordButton"/>
                                 <connections>
                                     <action selector="stopRecordingAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVe-tN-hA2"/>
