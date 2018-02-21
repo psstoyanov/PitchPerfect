@@ -74,7 +74,23 @@
                     <view key="view" contentMode="scaleToFill" id="u8d-RY-xSG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A66-mg-xd1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HmY-OL-K4v">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Idy-zm-tcr" firstAttribute="trailing" secondItem="A66-mg-xd1" secondAttribute="trailing" id="8HD-cZ-raG"/>
+                            <constraint firstItem="Idy-zm-tcr" firstAttribute="bottom" secondItem="A66-mg-xd1" secondAttribute="bottom" id="VIj-db-wJA"/>
+                            <constraint firstItem="A66-mg-xd1" firstAttribute="leading" secondItem="Idy-zm-tcr" secondAttribute="leading" id="npR-eF-RIf"/>
+                            <constraint firstItem="A66-mg-xd1" firstAttribute="top" secondItem="Idy-zm-tcr" secondAttribute="top" id="nvu-v8-wfI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Idy-zm-tcr"/>
                     </view>
                 </viewController>
